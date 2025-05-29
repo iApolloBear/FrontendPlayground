@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Loader Using CSS</title>
+    <style type="text/css">
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: #0b0b0b;
+      }
+
+      .loader {
+        margin: 15em 38em;
+        border: 16px solid #e3e3e3;
+        border-radius: 50%;
+        border-top: 16px solid #3498db;
+        width: 140px;
+        height: 140px;
+        animation-name: spin;
+        animation-duration: 2s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+      }
+
+      @keyframes spin {
+        0% {
+          transform: rotate(0deg);
+        }
+
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="loader"></div>
+  </body>
+</html>
