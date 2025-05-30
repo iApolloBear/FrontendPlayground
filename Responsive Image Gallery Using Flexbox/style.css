@@ -1,0 +1,32 @@
+body {
+  margin: 0;
+  background: #0b0b0b;
+}
+
+header {
+  margin: 0.5vw;
+  font-size: 0;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+header div {
+  flex: auto;
+  width: 200px;
+  margin: 0.5vw;
+}
+
+header div img {
+  width: 100%;
+  height: auto;
+}
+
+@media screen and (max-width: 400px) {
+  header div {
+    margin: 0;
+  }
+
+  header {
+    padding: 0;
+  }
+}
