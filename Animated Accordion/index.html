@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Animated Accordion</title>
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1>Animated Accordion</h1>
+      <button class="accordion" type="button">Section 1</button>
+      <div class="panel">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero deserunt
+          nihil, dolores laborum ipsum dolore? Nostrum quis similique incidunt,
+          obcaecati est cupiditate sint voluptate optio aut iusto labore amet
+          officiis.
+        </p>
+      </div>
+      <button class="accordion" type="button">Section 1</button>
+      <div class="panel">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero deserunt
+          nihil, dolores laborum ipsum dolore? Nostrum quis similique incidunt,
+          obcaecati est cupiditate sint voluptate optio aut iusto labore amet
+          officiis.
+        </p>
+      </div>
+      <button class="accordion" type="button">Section 1</button>
+      <div class="panel">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero deserunt
+          nihil, dolores laborum ipsum dolore? Nostrum quis similique incidunt,
+          obcaecati est cupiditate sint voluptate optio aut iusto labore amet
+          officiis.
+        </p>
+      </div>
+    </div>
+    <script>
+      var acc = document.getElementsByClassName("accordion");
+      var i;
+
+      for (i = 0; i < acc.length; i++) {
+        acc[i].onclick = function () {
+          this.classList.toggle("active");
+
+          var panel = this.nextElementSibling;
+
+          if (panel.style.maxHeight) {
+            panel.style.maxHeight = null;
+          } else {
+            panel.style.maxHeight = panel.scrollHeight + "px";
+          }
+        };
+      }
+    </script>
+  </body>
+</html>
