@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sticky Animated Navigation Bar</title>
+    <link href="style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript">
+      $(window).on("scroll", function () {
+        if ($(window).scrollTop()) {
+          $("nav").addClass("black");
+        } else {
+          $("nav").removeClass("black");
+        }
+      });
+    </script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <nav>
+        <div class="logo">LOGO</div>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a class="active" href="#">Log In</a></li>
+        </ul>
+      </nav>
+      <section class="sec1"></section>
+      <section class="content">
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta id
+          consequatur modi, quisquam unde assumenda possimus eum inventore
+          recusandae explicabo commodi, doloribus optio perspiciatis similique
+          ratione quibusdam, debitis quas suscipit. Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. Sapiente, saepe facere quos quia,
+          aliquam iure iusto nobis repellat cupiditate vero debitis, in illo
+          repudiandae est itaque alias? Inventore, asperiores porro. Lorem ipsum
+          dolor sit amet consectetur adipisicing elit. Consectetur provident,
+          minima sequi non molestiae, beatae reiciendis labore corporis rem,
+          fugit obcaecati adipisci velit veritatis sit? Odit in quaerat omnis
+          accusantium?
+        </p>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta id
+          consequatur modi, quisquam unde assumenda possimus eum inventore
+          recusandae explicabo commodi, doloribus optio perspiciatis similique
+          ratione quibusdam, debitis quas suscipit. Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. Sapiente, saepe facere quos quia,
+          aliquam iure iusto nobis repellat cupiditate vero debitis, in illo
+          repudiandae est itaque alias? Inventore, asperiores porro. Lorem ipsum
+          dolor sit amet consectetur adipisicing elit. Consectetur provident,
+          minima sequi non molestiae, beatae reiciendis labore corporis rem,
+          fugit obcaecati adipisci velit veritatis sit? Odit in quaerat omnis
+          accusantium?
+        </p>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta id
+          consequatur modi, quisquam unde assumenda possimus eum inventore
+          recusandae explicabo commodi, doloribus optio perspiciatis similique
+          ratione quibusdam, debitis quas suscipit. Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. Sapiente, saepe facere quos quia,
+          aliquam iure iusto nobis repellat cupiditate vero debitis, in illo
+          repudiandae est itaque alias? Inventore, asperiores porro. Lorem ipsum
+          dolor sit amet consectetur adipisicing elit. Consectetur provident,
+          minima sequi non molestiae, beatae reiciendis labore corporis rem,
+          fugit obcaecati adipisci velit veritatis sit? Odit in quaerat omnis
+          accusantium?
+        </p>
+      </section>
+    </div>
+  </body>
+</html>
