@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://fonts.cdnfonts.com/css/prime" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Full Screen Responsive Navigation</title>
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="nav" id="nav">
+        <a
+          href="javascript:void(0)"
+          id="close"
+          class="close"
+          onclick="closeNav()"
+          >&times;</a
+        >
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Blog</a>
+        <a href="#">Contact</a>
+      </div>
+      <span id="open" class="open" onclick="openNav()">&#9776;</span>
+      <h1>Full Screen Navigation</h1>
+    </div>
+    <script type="text/javascript">
+      function openNav() {
+        document.getElementById("open").style.display = "none";
+        document.getElementById("nav").style.width = "100%";
+      }
+      function closeNav() {
+        document.getElementById("open").style.display = "block";
+        document.getElementById("nav").style.width = "0";
+      }
+    </script>
+  </body>
+</html>
