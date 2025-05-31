@@ -1,0 +1,36 @@
+body {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  background: #222;
+  font-family: "Source Sans 3", sans-serif;
+}
+
+.skew {
+  margin-top: -200px;
+  padding: 200px 0;
+  transform: skew(0deg, -10deg);
+  background: #6d1d1d;
+}
+
+.content {
+  text-align: center;
+  transform: skew(0deg, 10deg);
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+h1 {
+  font-weight: lighter;
+  font-size: 40px;
+}
+
+p {
+  font-weight: lighter;
+  font-size: 20px;
+}
+
+.footer {
+  padding-top: 300px;
+  text-align: center;
+}
