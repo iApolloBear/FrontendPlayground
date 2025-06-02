@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Welcome Screen Text Animation</title>
+    <link href="style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1>Hello there!</h1>
+    </div>
+    <div class="welcome-section content-hidden">
+      <div class="content-wrap">
+        <ul class="fly-in-text">
+          <li>I</li>
+          <li>N</li>
+          <li>T</li>
+          <li>R</li>
+          <li>O</li>
+        </ul>
+        <a href="#" class="enter-button">ENTER</a>
+      </div>
+    </div>
+    <script>
+      $(function () {
+        var welcomeSection = $(".welcome-section"),
+          enterButton = welcomeSection.find(".enter-button");
+
+        setTimeout(function () {
+          welcomeSection.removeClass("content-hidden");
+        }, 800);
+
+        enterButton.on("click", function (e) {
+          e.preventDefault();
+          welcomeSection.addClass("content-hidden").fadeOut();
+        });
+      });
+    </script>
+  </body>
+</html>
