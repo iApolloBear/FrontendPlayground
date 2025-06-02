@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Responsive Sticky Navigation Bar</title>
+    <link href="style.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <nav>
+          <div class="menu-icon">
+            <i class="fa fa-bars fa-2x"></i>
+          </div>
+          <div class="logo">LOGO</div>
+          <div class="menu">
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <div class="content">
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+          Reprehenderit dicta dignissimos necessitatibus sequi aspernatur eos
+          expedita facilis pariatur, quasi error consequatur repellendus sunt
+          eius. Aliquam provident consequatur obcaecati natus architecto? Lorem
+          ipsum dolor sit, amet consectetur adipisicing elit. Praesentium,
+          veritatis minima atque nam ipsam nihil aliquam? Suscipit eligendi amet
+          provident numquam ipsam nemo iure vitae molestiae, fugiat sapiente
+          corrupti facilis? Lorem ipsum dolor sit amet, consectetur adipisicing
+          elit. Similique rem itaque commodi, ex nihil assumenda maxime error
+          ullam voluptas veritatis sunt distinctio deserunt natus impedit
+          eligendi cupiditate ea repellat quia.
+        </p>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+          Reprehenderit dicta dignissimos necessitatibus sequi aspernatur eos
+          expedita facilis pariatur, quasi error consequatur repellendus sunt
+          eius. Aliquam provident consequatur obcaecati natus architecto? Lorem
+          ipsum dolor sit, amet consectetur adipisicing elit. Praesentium,
+          veritatis minima atque nam ipsam nihil aliquam? Suscipit eligendi amet
+          provident numquam ipsam nemo iure vitae molestiae, fugiat sapiente
+          corrupti facilis? Lorem ipsum dolor sit amet, consectetur adipisicing
+          elit. Similique rem itaque commodi, ex nihil assumenda maxime error
+          ullam voluptas veritatis sunt distinctio deserunt natus impedit
+          eligendi cupiditate ea repellat quia.
+        </p>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+          Reprehenderit dicta dignissimos necessitatibus sequi aspernatur eos
+          expedita facilis pariatur, quasi error consequatur repellendus sunt
+          eius. Aliquam provident consequatur obcaecati natus architecto? Lorem
+          ipsum dolor sit, amet consectetur adipisicing elit. Praesentium,
+          veritatis minima atque nam ipsam nihil aliquam? Suscipit eligendi amet
+          provident numquam ipsam nemo iure vitae molestiae, fugiat sapiente
+          corrupti facilis? Lorem ipsum dolor sit amet, consectetur adipisicing
+          elit. Similique rem itaque commodi, ex nihil assumenda maxime error
+          ullam voluptas veritatis sunt distinctio deserunt natus impedit
+          eligendi cupiditate ea repellat quia.
+        </p>
+      </div>
+    </div>
+    <script>
+      $(document).ready(function () {
+        $(".menu-icon").on("click", function () {
+          $("nav ul").toggleClass("showing");
+        });
+      });
+
+      $(window).on("scroll", function () {
+        if ($(window).scrollTop()) {
+          $("nav").addClass("black");
+        } else {
+          $("nav").removeClass("black");
+        }
+      });
+    </script>
+  </body>
+</html>
