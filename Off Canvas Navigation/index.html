@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Responsive Animated Off Canvas Menu</title>
+    <link href="style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+      integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="page">
+      <span class="menu_toggle">
+        <i class="menu_open fa fa-bars fa-lg"></i>
+        <i class="menu_close fa fa-times fa-lg"></i>
+      </span>
+      <ul class="menu_items">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <main class="content">
+        <div class="content_inner">
+          <h1>Responsive Animated Off Canvas Menu</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam aut
+            quaerat voluptatibus delectus? Nulla optio quas praesentium
+            corporis, ea sed sapiente mollitia, harum architecto fuga,
+            consectetur reiciendis pariatur obcaecati delectus. Lorem ipsum
+            dolor sit amet consectetur adipisicing elit. Rem, nisi dolorem fugit
+            aperiam iste, animi minus maiores voluptatibus sequi quidem quaerat
+            natus repellendus laborum, ducimus mollitia! Explicabo corporis nisi
+            unde. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Corporis quidem similique in, delectus amet, vitae ullam sequi quo
+            explicabo enim veritatis ea earum. Minus eius saepe quisquam optio,
+            aspernatur illum. Lorem ipsum dolor sit amet consectetur,
+            adipisicing elit. Reiciendis eum sunt, culpa a quibusdam laborum
+            iusto consequatur explicabo ipsam, ipsa ratione cum quisquam aliquam
+            eaque harum nulla temporibus. Quis, fugit.
+          </p>
+        </div>
+      </main>
+    </div>
+    <script>
+      var $page = $(".page");
+      $(".menu_toggle").on("click", function () {
+        $page.toggleClass("shazam");
+      });
+
+      $(".content").on("click", function () {
+        $page.removeClass("shazam");
+      });
+    </script>
+  </body>
+</html>
