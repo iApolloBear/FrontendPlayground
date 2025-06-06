@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Responsive Drop-down Navigation</title>
+    <link href="style.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+      integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav>
+      <div>
+        <i class="fa fa-bars"></i>
+      </div>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li>
+          <a href="#">Drop 1 <i class="fa fa-sort-desc"></i></a>
+          <ul>
+            <li><a href="#">Product 1</a></li>
+            <li><a href="#">Product 2</a></li>
+            <li><a href="#">Product 3</a></li>
+            <li><a href="#">Product 4</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Drop 2 <i class="fa fa-sort-desc"></i></a>
+          <ul>
+            <li><a href="#">Product 1</a></li>
+            <li><a href="#">Product 2</a></li>
+            <li><a href="#">Product 3</a></li>
+            <li><a href="#">Product 4</a></li>
+          </ul>
+        </li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">FAQ</a></li>
+      </ul>
+    </nav>
+    <script>
+      $("nav div").click(function () {
+        $("ul").slideToggle();
+        $("ul ul").css("display", "none");
+      });
+
+      $("ul li").click(function () {
+        $("ul ul").slideUp();
+        $(this).find("ul").slideToggle();
+      });
+
+      $(window).resize(function () {
+        if ($(window).width() > 768) {
+          $("ul").removeAttr("style");
+        }
+      });
+    </script>
+  </body>
+</html>
