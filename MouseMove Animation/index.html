@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>JQuery MouseMove Animation</title>
+    <link href="style.css" rel="stylesheet" />
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="page-container">
+      <div class="page-back"></div>
+    </div>
+    <script>
+      var windowWidth = $(window).width();
+      $(".page-container").mousemove(function (event) {
+        var moveX = ($(window).width() / 2 - event.pageX) * 0.1;
+        var moveY = ($(window).height() / 2 - event.pageY) * 0.1;
+
+        $(".page-back").css("margin-left", moveX + "px");
+        $(".page-back").css("margin-top", moveY + "px");
+      });
+    </script>
+  </body>
+</html>
