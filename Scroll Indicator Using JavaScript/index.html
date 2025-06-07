@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Scroll Indicator</title>
+    <link href="style.css" rel="stylesheet" />
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <div class="header-proper">
+        <h1 class="logo">ScrollIndicator</h1>
+      </div>
+      <div class="scroll-line"></div>
+    </header>
+    <div class="main">
+      <div class="content">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
+          voluptates repellat, at officia commodi expedita magnam perspiciatis
+          beatae distinctio alias corrupti veniam minus veritatis, delectus, non
+          ut. Saepe, ipsam aliquam. Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Voluptate soluta illo quas beatae corrupti hic. Odit
+          aut eveniet error consectetur porro. Provident officiis maiores eius
+          magnam dolores deserunt beatae labore. Lorem ipsum, dolor sit amet
+          consectetur adipisicing elit. Vitae numquam ipsam quidem neque atque
+          pariatur at nulla excepturi, aut non accusamus exercitationem sunt,
+          maiores perspiciatis repellendus ex sequi? Cumque, libero.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
+          voluptates repellat, at officia commodi expedita magnam perspiciatis
+          beatae distinctio alias corrupti veniam minus veritatis, delectus, non
+          ut. Saepe, ipsam aliquam. Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Voluptate soluta illo quas beatae corrupti hic. Odit
+          aut eveniet error consectetur porro. Provident officiis maiores eius
+          magnam dolores deserunt beatae labore. Lorem ipsum, dolor sit amet
+          consectetur adipisicing elit. Vitae numquam ipsam quidem neque atque
+          pariatur at nulla excepturi, aut non accusamus exercitationem sunt,
+          maiores perspiciatis repellendus ex sequi? Cumque, libero.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
+          voluptates repellat, at officia commodi expedita magnam perspiciatis
+          beatae distinctio alias corrupti veniam minus veritatis, delectus, non
+          ut. Saepe, ipsam aliquam. Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Voluptate soluta illo quas beatae corrupti hic. Odit
+          aut eveniet error consectetur porro. Provident officiis maiores eius
+          magnam dolores deserunt beatae labore. Lorem ipsum, dolor sit amet
+          consectetur adipisicing elit. Vitae numquam ipsam quidem neque atque
+          pariatur at nulla excepturi, aut non accusamus exercitationem sunt,
+          maiores perspiciatis repellendus ex sequi? Cumque, libero.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
+          voluptates repellat, at officia commodi expedita magnam perspiciatis
+          beatae distinctio alias corrupti veniam minus veritatis, delectus, non
+          ut. Saepe, ipsam aliquam. Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Voluptate soluta illo quas beatae corrupti hic. Odit
+          aut eveniet error consectetur porro. Provident officiis maiores eius
+          magnam dolores deserunt beatae labore. Lorem ipsum, dolor sit amet
+          consectetur adipisicing elit. Vitae numquam ipsam quidem neque atque
+          pariatur at nulla excepturi, aut non accusamus exercitationem sunt,
+          maiores perspiciatis repellendus ex sequi? Cumque, libero.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
+          voluptates repellat, at officia commodi expedita magnam perspiciatis
+          beatae distinctio alias corrupti veniam minus veritatis, delectus, non
+          ut. Saepe, ipsam aliquam. Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Voluptate soluta illo quas beatae corrupti hic. Odit
+          aut eveniet error consectetur porro. Provident officiis maiores eius
+          magnam dolores deserunt beatae labore. Lorem ipsum, dolor sit amet
+          consectetur adipisicing elit. Vitae numquam ipsam quidem neque atque
+          pariatur at nulla excepturi, aut non accusamus exercitationem sunt,
+          maiores perspiciatis repellendus ex sequi? Cumque, libero.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
+          voluptates repellat, at officia commodi expedita magnam perspiciatis
+          beatae distinctio alias corrupti veniam minus veritatis, delectus, non
+          ut. Saepe, ipsam aliquam. Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Voluptate soluta illo quas beatae corrupti hic. Odit
+          aut eveniet error consectetur porro. Provident officiis maiores eius
+          magnam dolores deserunt beatae labore. Lorem ipsum, dolor sit amet
+          consectetur adipisicing elit. Vitae numquam ipsam quidem neque atque
+          pariatur at nulla excepturi, aut non accusamus exercitationem sunt,
+          maiores perspiciatis repellendus ex sequi? Cumque, libero.
+        </p>
+      </div>
+    </div>
+    <script>
+      $(window).scroll(function () {
+        var wintop = $(window).scrollTop(),
+          docheight = $(document).height(),
+          winHeight = $(window).height();
+        var scrolled = (wintop / (docheight - winHeight)) * 100;
+        $(".scroll-line").css("width", scrolled + "%");
+      });
+    </script>
+  </body>
+</html>
