@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Responsive Porfolio Page | HTML & CSS</title>
+    <link href="style.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.js"
+      integrity="sha512-XJgPMFq31Ren4pKVQgeD+0JTDzn0IwS1802sc+QTZckE6rny7AN2HLReq6Yamwpd2hFe5nJJGZLvPStWFv5Kww=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <nav class="navBar">
+        <a href="#">
+          <i class="fa-regular fa-square"></i>
+        </a>
+        <a href="#">
+          <i class="fa-solid fa-bars"></i>
+        </a>
+      </nav>
+      <header>
+        <h1 class="anim">UI & UX Design</h1>
+        <p class="anim">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore id
+          quae cumque pariatur tenetur ducimus alias ab amet! Voluptatibus
+          perferendis vitae in odio? Quibusdam quo totam saepe ad vitae
+          delectus?
+        </p>
+      </header>
+      <div class="work">
+        <img class="anim" src="1.jpg" alt="project img" />
+        <img class="anim" src="2.jpg" alt="project img" />
+        <img class="anim" src="3.jpg" alt="project img" />
+        <img class="anim" src="4.jpg" alt="project img" />
+      </div>
+      <div class="header2">
+        <h1 class="anim">Other Projects</h1>
+        <p class="anim">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque
+          quidem eaque debitis quod distinctio, voluptas suscipit perspiciatis
+          fuga sed aperiam tempora molestias nobis aliquam iure, similique
+          quibusdam quaerat reiciendis animi!
+        </p>
+      </div>
+      <div class="work2">
+        <img class="anim" src="5.jpg" alt="project img" />
+        <img class="anim" src="6.jpg" alt="project img" />
+      </div>
+      <footer>
+        <p>iApolloBear | Design Tutorial</p>
+      </footer>
+    </div>
+    <script>
+      window.sr = ScrollReveal();
+      sr.reveal(".anim");
+    </script>
+  </body>
+</html>
