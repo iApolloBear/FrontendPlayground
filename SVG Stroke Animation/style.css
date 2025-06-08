@@ -1,0 +1,14 @@
+body {
+  background: #202020;
+}
+
+svg {
+  width: 40%;
+  position: fixed;
+  inset: 0;
+  margin: auto;
+}
+
+path {
+  stroke: #fff !important;
+}
