@@ -1,0 +1,14 @@
+body {
+  background: #202020;
+}
+
+.wrapper {
+  height: 2000px;
+}
+
+svg {
+  position: fixed;
+  inset: 0;
+  margin: auto;
+  width: 30%;
+}
