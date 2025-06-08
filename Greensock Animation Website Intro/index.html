@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Learning GSAP</title>
+    <link href="style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="overlay">
+        <p class="screen">EXPLORE</p>
+        <div class="intro">
+          <button class="myBtn" onclick="fadeOut()">EXPLORE</button>
+        </div>
+      </div>
+      <div class="overlay-2"></div>
+      <div class="content">
+        <h1>Landing Page</h1>
+        <p class="data">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam,
+          fugit eius eaque doloremque eveniet officiis impedit veniam
+          necessitatibus voluptas tempore aspernatur cumque repellendus deserunt
+          cum aut alias maxime fugiat reiciendis!
+        </p>
+      </div>
+    </div>
+    <script>
+      function fadeOut() {
+        TweenMax.to(".myBtn", 1, {
+          y: -100,
+          opacity: 0,
+        });
+        TweenMax.to(".screen", 2, {
+          y: -400,
+          opacity: 0,
+          ease: Power2.easeInOut,
+          delay: 2,
+        });
+        TweenMax.to(".overlay", 2, {
+          ease: Power2.easeInOut,
+        });
+        TweenMax.to(".overlay", 2, {
+          delay: 2.6,
+          top: "-110%",
+          ease: Expo.easeInOut,
+        });
+        TweenMax.to(".overlay-2", 2, {
+          delay: 3,
+          top: "-110%",
+          ease: Expo.easeInOut,
+        });
+        TweenMax.to(".content", 2, {
+          delay: 3.2,
+          opacity: 0,
+          ease: Power2.easeInOut,
+        });
+        TweenMax.to(".content", 2, {
+          opacity: 1,
+          y: -300,
+          delay: 3.2,
+          ease: Power2.easeInOut,
+        });
+      }
+    </script>
+  </body>
+</html>
