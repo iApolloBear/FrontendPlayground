@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Responsive Block Reveal Navigation</title>
+    <link href="style.css" rel="stylesheet" />
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.6.3/css/all.min.css"
+      integrity="sha512-f2MWjotY+JCWDlE0+QAshlykvZUtIm35A6RHwfYZPdxKgLJpL8B+VVxjpHJwZDsZaWdyHVhlIHoblFYGkmrbhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="content">
+      <h1>BLOCK REVEAL NAV</h1>
+    </div>
+    <div class="menu-overlay">
+      <div class="block b1"></div>
+      <div class="block b2"></div>
+      <div class="block b3"></div>
+      <div class="block b4"></div>
+    </div>
+    <div class="strips">
+      <div class="strip one"></div>
+      <div class="strip two"></div>
+      <div class="strip three"></div>
+    </div>
+    <div class="menu">
+      <ul>
+        <li>Home</li>
+        <li>Our Story</li>
+        <li>Work</li>
+        <li>Contact</li>
+      </ul>
+    </div>
+    <div class="menu-btn">
+      <i class="fas fa-grip-lines"></i>
+    </div>
+    <script>
+      var t1 = new TimelineMax({ paused: true });
+      t1.to(".block", 1.2, {
+        width: "25%",
+        ease: Power4.easeInOut,
+      });
+      t1.staggerFrom(
+        ".menu ul li",
+        0.8,
+        {
+          y: 40,
+          opacity: 0,
+          ease: Power2.easeOut,
+        },
+        0.2,
+      );
+      t1.reverse();
+      $(document).on("click", ".menu-btn", function () {
+        t1.reversed(!t1.reversed());
+      });
+    </script>
+  </body>
+</html>
