@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Zoom On Scroll | Parallax Effect | HTML, CSS & JQuery</title>
+    <link href="style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="hero-back">
+      <img src="hero-front.png" alt="" />
+    </div>
+    <div class="content">
+      <h1>Content goes here</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam delectus
+        dignissimos quidem fugiat et voluptas minima expedita recusandae libero
+        eius qui, animi repellat omnis! Reprehenderit sed voluptates explicabo
+        nemo maxime sapiente ea. Repellendus omnis quo natus cum, praesentium,
+        laborum animi obcaecati qui, ad aperiam quibusdam? Laudantium, minus ab
+        nihil esse debitis accusamus officia deleniti adipisci eum ratione, quae
+        nam fugit. Eius nam incidunt repudiandae maxime? Rem quod quisquam
+        accusamus officia expedita velit! Nihil doloribus natus rem quae
+        voluptatem incidunt possimus ex debitis totam excepturi velit, molestiae
+        magni aperiam sequi iste culpa adipisci in recusandae consequuntur
+        inventore harum, cumque asperiores dicta!
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
+        obcaecati officia neque suscipit ex illo nesciunt tempora voluptate
+        repudiandae eligendi.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur
+        non nobis autem nostrum quisquam rem eaque minima, sapiente corrupti?
+        Soluta suscipit dicta explicabo error facilis, quis vero in deserunt
+        numquam, optio placeat! Quos numquam adipisci, sint culpa cumque
+        voluptates accusamus dicta amet porro ipsa excepturi placeat quisquam,
+        soluta optio autem.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis
+        nesciunt doloribus expedita temporibus magnam itaque aliquid vel
+        repellendus fugit ipsa earum dolores enim eligendi deleniti excepturi
+        possimus ab dolore, debitis ratione id reiciendis. A provident ipsum
+        iusto veniam laborum id quisquam molestias quasi. Aliquid distinctio quo
+        doloribus veritatis nobis eum eius quaerat perspiciatis fugit? Ea,
+        deleniti veritatis. Expedita et reiciendis molestias voluptatibus sequi
+        aut libero illo inventore quae. Saepe doloribus iste blanditiis earum
+        debitis eum necessitatibus repudiandae assumenda ipsam? Itaque ratione
+        consequatur, quia at aspernatur omnis alias ullam eligendi molestias
+        ipsam maiores vitae veritatis magni, ex ea repellat aliquid quam
+        dignissimos nesciunt odio. Pariatur, hic! Veritatis eum sit assumenda
+        repellat voluptatum voluptates deleniti voluptatem dolor ut enim porro,
+        dolores nesciunt, placeat cumque reprehenderit magnam adipisci odio
+        accusamus exercitationem! Alias voluptatem aperiam velit dolore magni
+        nobis soluta delectus excepturi fugiat autem beatae qui maxime itaque
+        commodi magnam deserunt, ducimus similique, recusandae ipsam aliquam
+        obcaecati a quas dolor. Nostrum voluptatum suscipit dicta dignissimos
+        dolorem id adipisci aliquam necessitatibus voluptas excepturi expedita
+        neque omnis quam, hic soluta nemo magnam quia, facilis non sed dolor
+        explicabo cumque tempore illum! Asperiores, doloremque. Praesentium
+        incidunt corrupti blanditiis iusto sed accusamus, dolorum sint odit
+        omnis inventore, eius et facilis voluptatibus consequatur asperiores
+        sapiente, iure molestias ex repudiandae dolore. Corporis laboriosam
+        quidem debitis itaque vel perferendis iure animi voluptatem tempora
+        aperiam labore praesentium repellat sequi porro, fugiat ipsum odit
+        cupiditate nisi facere quae consequatur maiores fuga iste illum. Maxime
+        dolores quidem magni quaerat. Reprehenderit quasi, odit neque nulla
+        perferendis provident? Rerum veritatis facilis dolor culpa ab omnis
+        magnam nemo voluptatem, perspiciatis eum nisi at, deleniti facere
+        accusamus hic porro laudantium laborum quas, inventore sit earum? Modi
+        iste doloremque eaque ullam similique reiciendis recusandae odio maxime
+        saepe rerum quia velit, eveniet magnam minima ipsam non laboriosam
+        placeat mollitia reprehenderit.
+      </p>
+    </div>
+    <script>
+      $(window).scroll(function () {
+        var scrollPos = $(this).scrollTop();
+        $(".hero-back").css({
+          "background-size": 100 + scrollPos + "%",
+        });
+      });
+    </script>
+  </body>
+</html>
