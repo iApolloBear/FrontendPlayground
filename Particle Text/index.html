@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Particle text using BlotterJS</title>
+    <link href="style.css" rel="stylesheet" />
+    <script src="blotter.min.js"></script>
+    <script src="fliesMaterial.js"></script>
+  </head>
+  <body>
+    <div id="main"></div>
+    <script>
+      container = document.getElementById("main");
+      var text = new Blotter.Text("PARANOID", {
+        family: "serif",
+        size: 150,
+        fill: "#fff",
+        paddingLeft: 80,
+        paddingRight: 80,
+        paddingTop: 80,
+        paddingBottom: 80,
+      });
+
+      var material = new Blotter.FliesMaterial();
+      material.uniforms.uPointCellWidth.value = 0.01;
+      material.uniforms.uPointRadius.value = 0.6;
+      material.uniforms.uSpeed.value = 3;
+
+      var blotter = new Blotter(material, {
+        texts: text,
+      });
+
+      var scope = blotter.forText(text);
+      scope.appendTo(container);
+    </script>
+  </body>
+</html>
