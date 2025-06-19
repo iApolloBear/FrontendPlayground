@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Landing Page Concept</title>
+    <link href="style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+  </head>
+  <body>
+    <div class="temp"></div>
+    <div class="first-block"></div>
+    <div class="second-block"></div>
+    <div class="loader">
+      <ul>
+        <li>L</li>
+        <li>O</li>
+        <li>A</li>
+        <li>D</li>
+        <li>I</li>
+        <li>N</li>
+        <li>G</li>
+      </ul>
+    </div>
+    <div class="third-block"></div>
+    <div class="menu">
+      <ion-icon name="menu"></ion-icon>
+    </div>
+    <div class="logo">
+      <span>Explore</span>
+    </div>
+    <div class="content">
+      <div class="heading">
+        <span>Faroe Islands</span>
+      </div>
+      <div class="desc">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam nisi
+          ab cum, iusto recusandae, hic non vero aperiam possimus ullam nemo
+          quibusdam, ad quod voluptate quasi!
+        </p>
+      </div>
+      <div class="link">
+        <button type="button">VISIT NOW</button>
+      </div>
+    </div>
+    <div class="img">
+      <img src="hero.jpg" alt="" />
+    </div>
+    <div class="media">
+      <ul>
+        <li><ion-icon name="logo-facebook"></ion-icon></li>
+        <li><ion-icon name="logo-instagram"></ion-icon></li>
+        <li><ion-icon name="logo-twitter"></ion-icon></li>
+      </ul>
+    </div>
+    <div class="watch">
+      <ion-icon name="play"></ion-icon>
+    </div>
+    <script>
+      TweenMax.from(".logo", 1.6, {
+        delay: 6.4,
+        opacity: 0,
+        y: 30,
+        ease: Expo.easeInOut,
+      });
+      TweenMax.from(".menu", 1.6, {
+        delay: 6.5,
+        opacity: 0,
+        y: 30,
+        ease: Expo.easeInOut,
+      });
+      TweenMax.from(".heading", 1.6, {
+        delay: 6.6,
+        opacity: 0,
+        y: 30,
+        ease: Expo.easeInOut,
+      });
+      TweenMax.from(".desc", 1.6, {
+        delay: 6.7,
+        opacity: 0,
+        y: 30,
+        ease: Expo.easeInOut,
+      });
+      TweenMax.from("button", 1.6, {
+        delay: 6.8,
+        opacity: 0,
+        y: 30,
+        ease: Expo.easeInOut,
+      });
+      TweenMax.from(".watch", 1.6, {
+        delay: 6.9,
+        opacity: 0,
+        y: 30,
+        rotation: 90,
+        ease: Expo.easeInOut,
+      });
+      TweenMax.staggerFrom(
+        ".media ul li",
+        2,
+        {
+          delay: 7,
+          opacity: 0,
+          y: 40,
+          ease: Expo.easeInOut,
+        },
+        0.2,
+      );
+    </script>
+  </body>
+</html>
